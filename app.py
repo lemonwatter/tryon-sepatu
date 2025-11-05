@@ -160,7 +160,7 @@ def process_inference(selected_shoe_path, input_feet_data, netG, col_result):
                 ia_img_np = load_and_preprocess(input_feet_data, is_mask=False) 
 
                 # SIMULASI MASKER (IM) - Channel 1 (diisi nol)
-                im_img_np = np.ones((IMG_SIZE, IMG_SIZE, 1), dtype=np.float32)
+                im_img_np = np.full((IMG_SIZE, IMG_SIZE, 1), 255.0, dtype=np.float32)
                 im_img_np = (im_img_np / 127.5) - 1.0 
 
                 # Gabungkan Input ke (256, 256, 7)
