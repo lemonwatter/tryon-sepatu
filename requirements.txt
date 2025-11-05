@@ -1,0 +1,7 @@
+streamlit
+tensorflow-cpu
+numpy
+Pillow
+scipy
+scikit-image
+gdown
